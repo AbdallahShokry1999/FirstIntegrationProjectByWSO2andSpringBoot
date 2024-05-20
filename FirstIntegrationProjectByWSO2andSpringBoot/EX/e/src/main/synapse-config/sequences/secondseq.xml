@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="secondseq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <property name="org.apache.synapse.transport.http.METHOD" scope="transport" type="STRING" value="PUT"/>
+    <property name="REST_API_INPUT" scope="transport" type="STRING" value="json"/>
+    <payloadFactory media-type="json">
+        <format>$json:getProperty('payment_amount')</format>
+        <args/>
+    </payloadFactory>
+    <call/>
+    <send>
+        <endpoint key="second"/>
+    </send>
+</sequence>

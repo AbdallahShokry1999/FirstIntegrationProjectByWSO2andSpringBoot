@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/api" name="LocalDataAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/all/{id}">
+        <inSequence>
+            <sequence key="firstseq"/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/bill">
+        <inSequence>
+            <sequence key="secondseq"/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

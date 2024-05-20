@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="firstseq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <call/>
+    <send>
+        <endpoint key="first"/>
+    </send>
+</sequence>
